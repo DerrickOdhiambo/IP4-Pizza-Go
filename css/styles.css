@@ -1,0 +1,47 @@
+body{
+  overflow-x: hidden;
+}
+.nav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(211, 209, 209);
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: .7s;
+}
+.nav a{
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: gray;
+}
+.nav ul{
+  list-style-type: none;
+}
+.nav ul a:hover{
+  color: rgb(122, 19, 19);
+  transition: .5s;
+}
+.nav .close{
+  position: absolute;
+  top: 0;
+  right: 50px;
+  margin-left: 60px;
+  font-size: 30px;
+}
+.slide a{
+  font-size: 35px;
+  color: rgb(122, 19, 19);
+}
+#sidenav{
+  padding: 15px;
+  transition: .7s;
+  width: 100%;
+  overflow: hidden;
+}
