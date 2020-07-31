@@ -20,6 +20,7 @@ body{
   font-size: 20px;
   text-decoration: none;
   color: gray;
+  font-family: 'Pacifico', cursive;
 }
 .nav ul{
   list-style-type: none;
@@ -44,4 +45,11 @@ body{
   transition: .7s;
   width: 100%;
   overflow: hidden;
+}
+.navigation{
+  display: flex;
+}
+.navigation .logo, .navigation .delivery{
+  font-family: 'Modak', cursive;
+  color: rgb(122, 19, 19);
 }
