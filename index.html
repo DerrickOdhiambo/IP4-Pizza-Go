@@ -31,7 +31,7 @@
       <h2 class="text-capitalize">pizza & go</h2>
     </div>
     <div class="container delivery">
-      <h3><a href="">order</a></h3>
+      <button><a href="">order</a></button>
     </div>
   </div>
   <div class="container about-us text-center">
@@ -49,23 +49,12 @@
       </figure>
     </div>
     <div class="order">
-      <h2 class="text-center">Menu</h2>
+      <h2 class="text-center pt-3">Menu</h2>
       <div class="container form">
         <div class="row">
-          <form class="col-md-6" action="#" id="formOrder">
+          <form class="col-md-5 text-center" action="#" id="formOrder">
             <div class="form-group">
-              <label for="pizzaType">Choose your Pizza</label>
-              <select name="pizzaType" class="form-control" id="pizzaType">
-                <option value="veggie">Veggie Tikka Pizza</option>
-                <option value="hawaiian">Hawaiian Pizza</option>
-                <option value="steak">BBQ Steak Pizza</option>
-                <option value="chicken">Chicken Perri-Perri Pizza</option>
-                <option value="pepperoni">Pepperoni Pizza</option>
-                <option value="borewors">Borewors Pizza</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="size">Whats your size?</label>
+              <label for="size">Whats Your Size?</label>
               <select name="size" class="form-control" id="size">
                 <option value="large">Large</option>
                 <option value="medium">Medium</option>
@@ -73,28 +62,34 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="crust">Choose your crust</label>
+              <label for="crust">Choose Your Crust</label>
               <select name="crust" class="form-control" id="crust">
-                <option value="thin">Thin crust</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="thin">Deep Pan crust</option>
+                <option value="">Classic Crust</option>
+                <option value="">Thin & Crispy Crust</option>
+                <option value="">Cheesy Crust</option>
+                <option value="">Gluten Free Crust</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="toppings">Pizza Toppings</label>
-              <select name="toppings" class="form-control" id="toppings">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+              <label for="pizzaType">Choose Your Pizza Toppings</label>
+              <select name="pizzaType" class="form-control" id="pizzaType">
+                <option value="veggie">Pepperoni, sausage, green pepper, onion, and mushroom</option>
+                <option value="hawaiian">BBQ sauce, grilled chicken, scallions, and cheddar cheese</option>
+                <option value="steak">Grilled chicken, avocado, and cherry tomatoes</option>
+                <option value="chicken">Sausage, caramelized onions, and fennel</option>
+                <option value="pepperoni">Caramelized onion, kale, and sliced green apples</option>
+                <option value="borewors">Jalapeño peppers and pineapple</option>
               </select>
             </div>
             <div class="form-group ">
               <label for="number">How many do you want today?</label>
-              <input class="form-control" type="number" name="number" id="number">
+              <input class="form-control pb-3" type="number" name="number" id="number">
             </div>
-            <button type="submit" class="btn btn-danger m-3">Total Cost</button>
-            <button type="submit" class="btn btn-danger m-3">Want A Delivery?</button>
+            <div class="button pt-3">
+              <button type="submit" class="btn btn-danger m-1">Pick Up</button><span class="text-danger" id="or">OR</span>
+              <button type="submit" class="btn btn-danger m-1">Delivery?</button>
+            </div>
           </form>
           <div class="container col" id="output">
             <div id="totalAmount"></div>
