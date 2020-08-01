@@ -2,7 +2,7 @@ body{
   overflow-x: hidden;
 }
 .nav{
-  height: 60%;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -64,7 +64,7 @@ body{
 .navigation .delivery h3{
   border: 2px solid white;
   padding: .3rem;
-  width: 6rem;
+  /* width: 6rem; */
   background-color: rgb(122, 19, 19);
   border-radius: .5rem;
   transition: .5s;
@@ -86,4 +86,51 @@ body{
 .about-us p{
   font-family: 'Norican', cursive;
   font-size: 2rem;
+}
+.menu{
+  position: relative;
+}
+.slider{
+  overflow: hidden;
+  height: 100vh;
+}
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+@keyframes slider{
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+.slider figure img{
+  width: 20%;
+  float: left;
 }
