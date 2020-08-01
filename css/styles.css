@@ -1,5 +1,6 @@
 body{
   overflow-x: hidden;
+  /* background-color: #a5a79a; */
 }
 .nav{
   height: 100%;
@@ -8,7 +9,7 @@ body{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(211, 209, 209);
+  background-color: #a5a79a;
   opacity: .9;
   overflow-x: hidden;
   padding-top: 60px;
@@ -17,16 +18,16 @@ body{
 .nav a{
   display: block;
   padding: 20px;
-  font-size: 20px;
+  font-size: 23px;
   text-decoration: none;
-  color: gray;
+  color: #61120e;
   font-family: 'Modak', cursive;
 }
 .nav ul{
   list-style-type: none;
 }
 .nav ul a:hover{
-  color: rgb(122, 19, 19);
+  color: #ca2521;
   transition: .5s;
 }
 .nav .close{
@@ -38,7 +39,7 @@ body{
 }
 .slide a{
   font-size: 35px;
-  color: rgb(122, 19, 19);
+  color: #eca442;
 }
 #sidenav{
   padding: 15px;
@@ -47,13 +48,16 @@ body{
   overflow: hidden;
 }
 .navigation{
+  background-image: url('../images/patrick-fore-m9qWesqRN0M-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
   display: flex;
   height: 100vh;
   width: 100%;
 }
 .navigation .logo, .navigation .delivery{
   font-family: 'Modak', cursive;
-  color: rgb(122, 19, 19);
+  color: #eca442;
   padding: 2rem;
   text-align: center;
 }
@@ -62,33 +66,39 @@ body{
   letter-spacing: 2px;
 }
 .navigation .delivery button{
-  border: 2px solid white;
+  /* border: 2px solid white; */
   padding: .8rem 2rem;
   /* width: 6rem; */
-  background-color: white;
+  background-color: #eca442;
   border-radius: .5rem;
   outline: none;
   transition: .5s;
 }
 .navigation .delivery a{
-  color: rgb(122, 19, 19);  
+  color: #61120e;  
   font-size: 2rem;
 }
 .navigation .delivery button:hover{
   font-weight: 700 !important;
-  letter-spacing: 3px;
-  background: none;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  letter-spacing: 4px;
+  background: #eca442;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(255,255,255,0.87);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(255,255,255,0.87);
   transition: all 0.3s ease 0s;
 }
-.about-us h2{
+.about-us h2, .contact .container h2, .menu .order h2{
   font-family: 'Modak', cursive;
-  color: rgb(122, 19, 19);
+  /* color: rgb(116, 17, 17); */
+  color: #61120e;
   font-size: 3rem;
+  letter-spacing: .3rem;
+  text-decoration: underline;
+}
+.about-us{
+  padding: 1rem;
 }
 .about-us p{
-  font-family: 'Norican', cursive;
+  font-family: 'Chilanka', cursive;
   font-size: 2rem;
 }
 .menu{
@@ -141,19 +151,22 @@ body{
 .menu .order{
   position: absolute;
   top: 0;
-  background-color: rgba(211, 209, 209,.5);
+  background-color: rgba(216, 211, 211, 0.8);
+  border-radius: 3rem;
+  margin-left: 25%;
   height: 100%;
-  width: 100%;
+  width: 50%;
 }
-.menu h2{
-  font-family:'Modak', cursive ;
-  font-size: 3rem;
+.menu{
+  font-family: 'Chilanka', cursive;
+  font-size: 2.5rem;
+  letter-spacing: .1rem;
 }
 #output{
   display: none;
 }
 #formOrder .form-group label{
-  font-family: 'Modak', cursive;
+  font-family: 'Chilanka', cursive;
   font-size: 1.5rem;
 }
 #or{
@@ -168,4 +181,29 @@ body{
   font-family: 'Modak', sans-serif;
   padding: 1rem 1.5rem;
   /* font-size: 1.5rem; */
+}
+.contact{
+  font-family: 'Chilanka', cursive;
+  font-weight: 600;
+  background-color: #eca442;
+}
+.contact .col ul{
+  list-style-type: none;
+}
+.contact .col ul li{
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: .8rem;
+  border: 1px solid;
+}
+.contact .col ul li a{
+  color: #61120e;
+}
+.col h4{
+  text-decoration: underline;
+  font-size: 2rem;
+  color: #ca2521;
+}
+.footer-bottom{
+  background-color: #ca2521;
 }
