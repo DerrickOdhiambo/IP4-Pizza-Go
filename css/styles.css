@@ -134,3 +134,17 @@ body{
   width: 20%;
   float: left;
 }
+.menu .order{
+  position: absolute;
+  top: 0;
+  background-color: rgba(211, 209, 209,.5);
+  height: 100%;
+  width: 100%;
+}
+.menu h2{
+  font-family:'Modak', cursive ;
+  font-family: 2rem;
+}
+#output{
+  display: none;
+}
