@@ -48,6 +48,69 @@
         <img src="./images/BBQ Chicken pizza.jpg" alt="">
       </figure>
     </div>
+    <div class="order">
+      <h2 class="text-center">Menu</h2>
+      <div class="container form">
+        <div class="row">
+          <form class="col-md-6" action="#" id="formOrder">
+            <div class="form-group">
+              <label for="pizzaType">Choose your Pizza</label>
+              <select name="pizzaType" class="form-control" id="pizzaType">
+                <option value="veggie">Veggie Tikka Pizza</option>
+                <option value="hawaiian">Hawaiian Pizza</option>
+                <option value="steak">BBQ Steak Pizza</option>
+                <option value="chicken">Chicken Perri-Perri Pizza</option>
+                <option value="pepperoni">Pepperoni Pizza</option>
+                <option value="borewors">Borewors Pizza</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="size">Whats your size?</label>
+              <select name="size" class="form-control" id="size">
+                <option value="large">Large</option>
+                <option value="medium">Medium</option>
+                <option value="small">Small</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="crust">Choose your crust</label>
+              <select name="crust" class="form-control" id="crust">
+                <option value="thin">Thin crust</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="toppings">Pizza Toppings</label>
+              <select name="toppings" class="form-control" id="toppings">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="form-group ">
+              <label for="number">How many do you want today?</label>
+              <input class="form-control" type="number" name="number" id="number">
+            </div>
+            <button type="submit" class="btn btn-danger m-3">Total Cost</button>
+            <button type="submit" class="btn btn-danger m-3">Want A Delivery?</button>
+          </form>
+          <div class="container col" id="output">
+            <div id="totalAmount"></div>
+            <div class="" id="delivery">
+              <p>Ksh 300 extra for deliveries within the city</p>
+              <form action="#">
+                <div class=" form-group">
+                  <label for="location">What's your location?</label>
+                  <input type="text" name="location" class="form-control" id="location">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
