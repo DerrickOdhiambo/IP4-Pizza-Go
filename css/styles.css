@@ -61,22 +61,26 @@ body{
   font-size: 3.5rem;
   letter-spacing: 2px;
 }
-.navigation .delivery h3{
+.navigation .delivery button{
   border: 2px solid white;
-  padding: .3rem;
+  padding: .8rem 2rem;
   /* width: 6rem; */
-  background-color: rgb(122, 19, 19);
+  background-color: white;
   border-radius: .5rem;
+  outline: none;
   transition: .5s;
 }
-.navigation .delivery h3 a{
-  color: whitesmoke;
+.navigation .delivery a{
+  color: rgb(122, 19, 19);  
+  font-size: 2rem;
 }
-.navigation .delivery h3:hover{
-  background-color: whitesmoke;
-}
-.navigation .delivery h3 a:hover{
-  color: rgb(122, 19, 19);
+.navigation .delivery button:hover{
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
 }
 .about-us h2{
   font-family: 'Modak', cursive;
@@ -143,8 +147,25 @@ body{
 }
 .menu h2{
   font-family:'Modak', cursive ;
-  font-family: 2rem;
+  font-size: 3rem;
 }
 #output{
   display: none;
+}
+#formOrder .form-group label{
+  font-family: 'Modak', cursive;
+  font-size: 1.5rem;
+}
+#or{
+  border: 1px solid white;
+  padding: 1.2rem;
+  border-radius: 50%;
+  font-family: 'Modak', sans-serif;
+  font-size: 2rem;
+  background-color: white;
+}
+.button button{
+  font-family: 'Modak', sans-serif;
+  padding: 1rem 1.5rem;
+  /* font-size: 1.5rem; */
 }
