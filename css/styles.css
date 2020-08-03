@@ -100,6 +100,8 @@ body{
 .about-us p{
   font-family: 'Chilanka', cursive;
   font-size: 2rem;
+  color: #eca442;
+  font-weight: 600;
 }
 .menu{
   position: relative;
@@ -153,16 +155,16 @@ body{
   top: 0;
   background-color: rgba(216, 211, 211, 0.8);
   border-radius: 3rem;
-  margin-left: 25%;
+  /* margin-left: 25%; */
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 .menu{
   font-family: 'Chilanka', cursive;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   letter-spacing: .1rem;
 }
-#output{
+.delivery-form{
   display: none;
 }
 #formOrder .form-group label{
@@ -206,4 +208,7 @@ body{
 }
 .footer-bottom{
   background-color: #ca2521;
+}
+.form .row .col h6{
+  text-decoration: underline;
 }
