@@ -72,6 +72,21 @@ $(document).ready(function(){
   })
 })
 
+$(document).ready(function(){
+  $("button#delivery").click(function(event){
+    event.preventDefault();
+    $(".delivery-form").show();
+    $("button#confirm-delivery").click(function(event){
+      event.preventDefault();
+
+      var userLocation = $("input#location").val();
+      var totalSum = `Thank you. Your order will be delivered at ${userLocation} soon`;
+      $("#totalAmount").text(totalSum)
+      $(".delivery-form").hide();
+    })
+  })
+})
+
 
 
 
