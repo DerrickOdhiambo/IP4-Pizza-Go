@@ -212,3 +212,72 @@ body{
 .form .row .col h6{
   text-decoration: underline;
 }
+.btn #button{
+  display: none;
+}
+.landing-page-text h1{
+  padding-top: 10rem;
+  font-size: 4rem;
+  text-decoration: underline;
+  animation-duration: 3s;
+}
+.landing-page-text #pizza{
+  color: #61120e;
+}
+.landing-page-text #go{
+  color: #ca2521;
+}
+/* Media query */
+@media only screen and (max-width: 960px) {
+  .menu .order{
+    position: unset;
+    background-color: rgba(216, 211, 211, 0.8);
+    border-radius: 0;
+    /* margin-left: 25%; */
+    height: 150%;
+    width: 100%;
+  }
+  .menu{
+    position: unset;
+  }
+  .slider{
+    display: none;
+  }
+  .navigation .logo h2{
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .navigation .delivery button{
+    /* border: 2px solid white; */
+    padding: .8rem;
+    /* width: 6rem; */
+    background-color: #eca442;
+    border-radius: .5rem;
+    outline: none;
+    transition: .5s;
+  }
+  .navigation .delivery a{
+    color: #61120e;  
+    font-size: 1rem;
+  }
+  .col h4{
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: #ca2521;
+  }
+  .button button{
+    font-family: 'Modak', sans-serif;
+    padding: .2rem;
+  }
+  #formOrder{
+    margin-bottom: 1rem;
+  }
+  #or{
+    border: 1px solid white;
+    padding: .7rem;
+    border-radius: 50%;
+    font-family: 'Modak', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+  }
+}
