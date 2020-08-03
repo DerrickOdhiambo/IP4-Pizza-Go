@@ -25,13 +25,18 @@ To clone use the following commands:
 |--------|-------------|--------------|
 |PickUp option|Large Deep Pan Crust Pepperoni, sausage 1|Pizza size: Large for Ksh. 900<br>Crust type : Deep Pan crust for Ksh 100<br>Toppings : Pepperoni, sausage, green pepper, onion, and mushroom for Ksh. 150<br>Number of Pizza : 1<br>Your total amount is : Ksh. 1150|
 |Delivery Option|Medum Deep Pan Crust Pepperoni, sausage 1|Form for persons name, contact and location|
+|Delivery Form|Derrick 07.. Juja|Thank you Derrick for trusting us. Your order will be delivered at Juja soon|
 
 ## Technologies Used
+- HTML & CSS
 - Bootstrap 4
 - jQuery & JavaScript
 
 ### Known Bugs
 - Some of the code for incoporating JavaScript constructors and prototypes are not tested.
+
+## Contact
+- odhiamboderrick56@gmail.com
 
 ## License
 MIT License
