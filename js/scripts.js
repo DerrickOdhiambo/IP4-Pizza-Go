@@ -75,13 +75,16 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("button#delivery").click(function(event){
     event.preventDefault();
+    $("#totalAmount").hide();
     $(".delivery-form").show();
     $("button#confirm-delivery").click(function(event){
       event.preventDefault();
 
       var userLocation = $("input#location").val();
-      var totalSum = `Thank you. Your order will be delivered at ${userLocation} soon`;
-      $("#totalAmount").text(totalSum)
+      var userName = $("input#name").val();
+
+      var totalSum = `Thank you ${userName} for trusting us. Your order will be delivered at ${userLocation} soon`;
+      $("#formOutput").text(totalSum)
       $(".delivery-form").hide();
     })
   })
