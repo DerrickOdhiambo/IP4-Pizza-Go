@@ -11,28 +11,7 @@ function closeSlideMenu(){
 
 
 
-// $(document).ready('onclick', function(event){
-//   event.preventDefault();
- 
-// function onPickUp(){
-//   var size = document.getElementById("size").value;
-//   var crustType = document.getElementById("crust").value;
-//   var topping = document.getElementById("pizzaType").value;
-//   var numberOfPizza = document.getElementById("number").value;
 
-//   var form = document.getElementById("formOrder");
-//   form.addEventListener('submit', (event) =>{
-//     event.preventDefault();
-
-//     console.log(size, crustType, topping, numberOfPizza)
-//   })
-  
-//   var
-// }    
-
-// })
-
-// busines logic
 //contructor function
 //
 
@@ -79,7 +58,6 @@ $(document).ready(function(){
     $(".delivery-form").show();
     $("button#confirm-delivery").click(function(event){
       event.preventDefault();
-
       var userLocation = $("input#location").val();
       var userName = $("input#name").val();
 
@@ -89,43 +67,3 @@ $(document).ready(function(){
     })
   })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // var pizzaSize = parseInt(document.getElementById("size").value);
-  // var crustType = parseInt(document.getElementById("crust").value);
-  // var choiceToppings = parseInt(document.getElementById("toppings").value);
-  // var numberOfPizza = parseInt(document.getElementById("number").value);
-  
-  // $()
-  // var getPizza = new Pizza();
-  // console.log(getPizza)
-
-  // var total = (pizzaSize + crustType + choiceToppings) * numberOfPizza;
-  // var pizzaSizeChoice =pizzaSize.options[pizzaSize.selectedIndex].text;
-  // console.log(pizzaSizeChoice)
-  // document.getElementById('output').innerHTML = `Your total bill is Ksh. ${total}`;
