@@ -227,6 +227,8 @@ body{
 .landing-page-text #go{
   color: #ca2521;
 }
+
+
 /* Media query */
 @media only screen and (max-width: 960px) {
   .menu .order{

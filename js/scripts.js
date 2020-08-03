@@ -43,6 +43,7 @@ $(document).ready(function(){
     var crustTypeChoice = $("#crust option:selected").text();
     var toppingsChoice = $("#toppings option:selected").text();
     console.log(pizzaSizeChoice, crustTypeChoice, toppingsChoice)
+
     var result = `Your pizza worth is: \n Pizza size: ${pizzaSizeChoice} for Ksh. ${pizzaSize} <br> Crust type : ${crustTypeChoice} for Ksh ${crustType} \n Toppings : ${toppingsChoice} for Ksh. ${choiceToppings}\n Number of Pizza : ${numberOfPizza} \n Your total amount is : Ksh. ${total}`
     var res = result.replace(/\n/g, "<br>");
     $("#totalAmount").html(res);
@@ -68,10 +69,13 @@ $(document).ready(function(){
     $(".delivery-form").show();
     $("button#confirm-delivery").click(function(event){
       event.preventDefault();
+
       var userLocation = $("input#location").val();
       var userName = $("input#name").val();
+
       var deliverPizzaTotal = new Pizza(total);
       console.log(deliverPizzaTotal.total);
+      
       var totalSum = `Thank you ${userName} for trusting us. Your order will be delivered at ${userLocation} soon`;
       $("#formOutput").text(totalSum)
       $(".delivery-form").hide();
