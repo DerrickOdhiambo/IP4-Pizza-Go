@@ -9,6 +9,7 @@
   <script src="./js/scripts.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Merienda+One&family=Modak&family=Rochester&family=Srisakdi:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css">
   <title>Pizza and Go</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
       </div>
     </div>
     <div class="container logo">
-      <h2 class="text-capitalize">pizza & go</h2>
+      <h2 class="text-capitalize animated bounce">pizza & go</h2>
     </div>
     <div class="container delivery">
       <button class="text-uppercase"><a href="">order</a></button>
@@ -52,57 +53,76 @@
       <div class="container form">
         <h2 class="text-center pt-1">Menu</h2>
         <div class="row">
-          <form class="col text-center" action="#" id="formOrder">
+          <form class="col-md-5 text-center" action="#" id="formOrder">
             <div class="form-group">
               <label for="size">Whats Your Size?</label>
               <select name="size" class="form-control" id="size">
-                <option value="large">Large</option>
-                <option value="medium">Medium</option>
-                <option value="small">Small</option>
+                <option value="900">Large</option>
+                <option value="750">Medium</option>
+                <option value="450">Small</option>
               </select>
             </div>
             <div class="form-group">
               <label for="crust">Choose Your Crust</label>
               <select name="crust" class="form-control" id="crust">
-                <option value="thin">Deep Pan crust</option>
-                <option value="">Classic Crust</option>
-                <option value="">Thin & Crispy Crust</option>
-                <option value="">Cheesy Crust</option>
-                <option value="">Gluten Free Crust</option>
+                <option value="100">Deep Pan crust</option>
+                <option value="100">Classic Crust</option>
+                <option value="100">Thin & Crispy Crust</option>
+                <option value="100">Cheesy Crust</option>
+                <option value="100">Gluten Free Crust</option>
               </select>
             </div>
             <div class="form-group">
               <label for="pizzaType">Choose Your Pizza Toppings</label>
-              <select name="pizzaType" class="form-control" id="pizzaType">
-                <option value="veggie">Pepperoni, sausage, green pepper, onion, and mushroom</option>
-                <option value="hawaiian">BBQ sauce, grilled chicken, scallions, and cheddar cheese</option>
-                <option value="steak">Grilled chicken, avocado, and cherry tomatoes</option>
-                <option value="chicken">Sausage, caramelized onions, and fennel</option>
-                <option value="pepperoni">Caramelized onion, kale, and sliced green apples</option>
-                <option value="borewors">Jalapeño peppers and pineapple</option>
+              <select name="toppings" class="form-control" id="toppings">
+                <option value="150">Pepperoni, sausage, green pepper, onion, and mushroom</option>
+                <option value="200">BBQ sauce, grilled chicken, scallions, and cheddar cheese</option>
+                <option value="200">Grilled chicken, avocado, and cherry tomatoes</option>
+                <option value="180">Sausage, caramelized onions, and fennel</option>
+                <option value="150">Caramelized onion, kale, and sliced green apples</option>
+                <option value="150">Jalapeño peppers and pineapple</option>
               </select>
             </div>
             <div class="form-group ">
               <label for="number">How many do you want today?</label>
-              <input class="form-control pb-3" type="number" name="number" id="number">
+              <input class="form-control pb-3" type="number" name="number" id="number" required min="1">
             </div>
             <div class="button pt-3">
-              <button type="submit" class="btn btn-danger m-1">Pick Up</button><span class="text-danger" id="or">OR</span>
-              <button type="submit" class="btn btn-danger m-1">Delivery?</button>
+              <button type="submit" id="pickUp" class="btn btn-danger m-1">Pick Up</button><span class="text-danger" id="or">OR</span>
+              <button type="submit" id="delivery" class="btn btn-danger m-1">Delivery?</button>
             </div>
           </form>
-          <!-- <div class="container col" id="output">
+          <div class="container col" id="output">
+            <div class="menu-list">
+              <h3>Pizza & Go Prices</h3>
+              <h6><strong>Size</strong></h6>
+              <ul>
+                <li>Large Pizza @ Ksh. 900 + <strong>Crust</strong> at Ksh. 100</li>
+                <li>Medium Pizza @ Ksh. 750 + <strong>Crust</strong> at Ksh. 100</li>
+                <li>Small Pizza @ Ksh. 450 + <strong>Crust</strong> at Ksh. 100</li>
+              </ul>
+              <h6><strong>Toppings</strong></h6>
+              <ul>
+                <li>Pepperoni, sausage, green pepper, onion, and mushroom at Ksh. 150</li>
+                <li>BBQ sauce, grilled chicken, scallions, and cheddar cheese at Ksh. 200</li>
+                <li>Grilled chicken, avocado, and cherry tomatoes at Ksh. 200</li>
+                <li>Sausage, caramelized onions, and fennel at Ksh. 180</li>
+                <li>Caramelized onion, kale, and sliced green apples at Ksh. 150</li>
+                <li>Jalapeño peppers and pineapple at Ksh. 150</li>
+              </ul>
+            </div>
             <div id="totalAmount"></div>
-            <div class="" id="delivery">
-              <p>Ksh 300 extra for deliveries within the city</p>
+            <div class="delivery-form">
+              <h5>Ksh 300 extra for deliveries within the city</h5>
               <form action="#">
                 <div class=" form-group">
                   <label for="location">What's your location?</label>
                   <input type="text" name="location" class="form-control" id="location">
                 </div>
+                <button type="submit" class="btn btn-danger" id="confirm-delivery">Confirm Delivery</button>
               </form>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -134,7 +154,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom text-center p-1">
+    <div class="footer-bottom text-center pt-3 pb-1">
       <p><span class="far fa-copyright"></span><span> 2020 || Pizza & Go</span></p>
     </div>
   </div>
