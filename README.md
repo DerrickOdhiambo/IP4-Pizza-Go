@@ -1,4 +1,4 @@
-# Delani Studio
+# Pizza & Go
 This is a a web application for a pizza store to order and inquire for deliveries.
 
 ## Project Live Link
@@ -20,7 +20,7 @@ To clone use the following commands:
 ### Example
 |Behavior|Input Example|Output Example|
 |--------|-------------|--------------|
-|PickUp option|Large Deep Pan Crust Pepperoni, sausage 1|Pizza size: Large for Ksh. 900\Crust type : Deep Pan crust for Ksh 100\Toppings : Pepperoni, sausage, green pepper, onion, and mushroom for Ksh. 150\Number of Pizza : 1\Your total amount is : Ksh. 1150|
+|PickUp option|Large Deep Pan Crust Pepperoni, sausage 1|Pizza size: Large for Ksh. 900  Crust type : Deep Pan crust for Ksh 100  Toppings : Pepperoni, sausage, green pepper, onion, and mushroom for Ksh. 150  Number of Pizza : 1  Your total amount is : Ksh. 1150|
 |Delivery Option|Medum Deep Pan Crust Pepperoni, sausage 1|Form for persons name, contact and location|
 
 ## Technologies Used
