@@ -2,7 +2,7 @@
 This is a a web application for a pizza store to order and inquire for deliveries.
 
 ## Project Live Link
-- [Click for to view the site]
+- [Click for to view the site](https://derrickodhiambo.github.io/IP4-Pizza-Go/)
 
 ## Setup
 No installation required for the application. To start this project, cloning or  to your own repository would be ideal.
